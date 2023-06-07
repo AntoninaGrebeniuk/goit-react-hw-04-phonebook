@@ -20,14 +20,14 @@ export function ContactItem({ contacts, onRemoveContact }) {
   );
 }
 
-// ContactItem.propTypes = {
-//   contacts: PropTypes.arrayOf(
-//     PropTypes.shape({
-//       id: PropTypes.string.isRequired,
-//       name: PropTypes.string.isRequired,
-//       number: PropTypes.string.isRequired,
-//     }).isRequired
-//   ).isRequired,
+ContactItem.propTypes = {
+  contacts: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+      number: PropTypes.string.isRequired,
+    }).isRequired
+  ).isRequired,
 
-//   onRemoveContact: PropTypes.func.isRequired,
-// };
+  onRemoveContact: PropTypes.func.isRequired,
+};

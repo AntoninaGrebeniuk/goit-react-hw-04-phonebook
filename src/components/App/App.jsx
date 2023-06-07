@@ -15,7 +15,7 @@ export const App = () => {
     CONTACTS_KEY,
     initialContacts
   );
-  console.log(contacts);
+
   const [filter, setFilter] = useState('');
 
   const createContact = data => {

@@ -3,7 +3,6 @@ import { ContactsList } from './ContactList.styled';
 import { ContactItem } from '../ContactItem/ContactItem';
 
 export function ContactList({ contacts, onRemoveContact }) {
-  console.log(contacts);
   return (
     <ContactsList>
       <ContactItem contacts={contacts} onRemoveContact={onRemoveContact} />

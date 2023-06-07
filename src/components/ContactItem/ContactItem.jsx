@@ -6,8 +6,6 @@ export function ContactItem({ contacts, onRemoveContact }) {
   return (
     <>
       {contacts.map(({ id, name, number }) => {
-        // console.log(typeof id);
-
         return (
           <Item key={id}>
             <Name>{name}</Name>
@@ -22,14 +20,14 @@ export function ContactItem({ contacts, onRemoveContact }) {
   );
 }
 
-ContactItem.propTypes = {
-  contacts: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.string.isRequired,
-      name: PropTypes.string.isRequired,
-      number: PropTypes.string.isRequired,
-    }).isRequired
-  ).isRequired,
+// ContactItem.propTypes = {
+//   contacts: PropTypes.arrayOf(
+//     PropTypes.shape({
+//       id: PropTypes.string.isRequired,
+//       name: PropTypes.string.isRequired,
+//       number: PropTypes.string.isRequired,
+//     }).isRequired
+//   ).isRequired,
 
-  onRemoveContact: PropTypes.func.isRequired,
-};
+//   onRemoveContact: PropTypes.func.isRequired,
+// };

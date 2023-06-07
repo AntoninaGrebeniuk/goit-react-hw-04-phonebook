@@ -3,6 +3,7 @@ import { ContactsList } from './ContactList.styled';
 import { ContactItem } from '../ContactItem/ContactItem';
 
 export function ContactList({ contacts, onRemoveContact }) {
+  console.log(contacts);
   return (
     <ContactsList>
       <ContactItem contacts={contacts} onRemoveContact={onRemoveContact} />
@@ -10,7 +11,7 @@ export function ContactList({ contacts, onRemoveContact }) {
   );
 }
 
-ContactList.propTypes = {
-  contacts: PropTypes.array.isRequired,
-  onRemoveContact: PropTypes.func.isRequired,
-};
+// ContactList.propTypes = {
+//   contacts: PropTypes.array.isRequired,
+//   onRemoveContact: PropTypes.func.isRequired,
+// };

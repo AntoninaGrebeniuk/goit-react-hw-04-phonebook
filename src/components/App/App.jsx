@@ -28,13 +28,9 @@ export const App = () => {
       return;
     }
 
-    setContacts(prevContacts => [
-      {
-        ...data,
-        id: nanoid(),
-      },
-      ...prevContacts,
-    ]);
+    const newContact = { ...data, id: nanoid() };
+
+    setContacts(prevState => [newContact, ...prevState]);
   };
 
   const onFilter = ({ target }) => {
@@ -51,8 +47,8 @@ export const App = () => {
   };
 
   const removeContact = contactId => {
-    setContacts(prevContacts =>
-      prevContacts.filter(contact => contact.id !== contactId)
+    setContacts(prevState =>
+      prevState.filter(contact => contact.id !== contactId)
     );
   };
 

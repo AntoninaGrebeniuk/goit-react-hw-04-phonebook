@@ -30,7 +30,7 @@ export const App = () => {
 
     const newContact = { ...data, id: nanoid() };
 
-    setContacts(prevState => [newContact, ...prevState]);
+    setContacts(prevContacts => [newContact, ...prevContacts]);
   };
 
   const onFilter = ({ target }) => {
